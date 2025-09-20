@@ -3,3 +3,5 @@
 Weekly newsletter covering AI, automation, photography, and creative production insights.
 
 ## Recent Issues
+
+- **[2025-09-20](https://substack.banast.as/newsletters/2025-09-20_SideChannels)**
