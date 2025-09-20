@@ -4,4 +4,4 @@ Weekly newsletter covering AI, automation, photography, and creative production 
 
 ## Recent Issues
 
-- **[undefined](./newsletters/2025-09-20_SideChannels.html)** - 2025-09-20
+- **[2025-09-20](https://side-channels.pages.dev/newsletters/2025-09-20_SideChannels)**
