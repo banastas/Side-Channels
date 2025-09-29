@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - September 29, 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 24px;
+            color: #e5e7eb;
+        }
+        
+        .intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #e5e7eb;
+        }
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .article:last-child {
+            margin-bottom: 0;
+        }
+        
+        .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .article-title a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #f59e0b;
+            text-decoration: underline;
+        }
+        
+        .article-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #d1d5db;
+        }
+        
+        .photo-container {
+            text-align: center;
+            background: #262626;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .photo-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .photo-link:hover {
+            text-decoration: underline;
+        }
+        
+        .insight-quote {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            color: #1a1a1a;
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        .divider {
+            border: none;
+            border-top: 1px solid #404040;
+            margin: 32px 0;
+        }
+        
+.footer {
+            text-align: left;  /* Changed from center to left */
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        
+        .footer-text {
+            font-size: 16px;
+            color: #e5e7eb;
+            margin-bottom: 8px;
+        }
+        
+        .footer-cta {
+            font-size: 14px;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+        
+        .signature {
+            font-size: 16px;
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 16px;
+            }
+            
+            .newsletter-title {
+                font-size: 24px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .article {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">Loops, Limits, and Letdowns</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>•</span>
+            <span>SEP 29, 2025</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.technologyreview.com/2025/09/17/1123801/ai-virus-bacteriophage-life/" target="_blank">AI-designed viruses are here and already killing bacteria</a>
+            </h3>
+            <p class="article-source">technologyreview.com</p>
+            <p class="article-summary">AI-designed viruses are now targeting bacteria directly, marking a significant step in biotech that challenges traditional infection treatment methods. This development highlights just how limited older approaches can be in addressing modern healthcare needs.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.theatlantic.com/economy/archive/2025/09/ai-bubble-us-economy/684128/" target="_blank">Are We in an AI Bubble?</a>
+            </h3>
+            <p class="article-source">theatlantic.com</p>
+            <p class="article-summary">The AI hype is reaching a breaking point, and this article highlights how companies are struggling to keep pace while investors chase after the latest shiny tech. It's a clear signal that a serious reckoning is on the horizon for this space.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/albania-appoints-ai-government-official" target="_blank">Albania Appoints an AI as Government Official</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Albania appointing an AI as a government official is a bold move that raises serious questions about accountability in governance. This isn't just about efficiency; it shows a willingness to gamble with the future of their political landscape.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Photo of the Week</h2>
+        <div class="photo-container">
+            <img src="https://photos.banast.as/photo-RSIhW82NnUHnRIoe.jpg" alt="Photo of the Week">
+            <a href="https://photo.banast.as/p/qu5YZlJj" class="photo-link" target="_blank">View full resolution →</a>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Insight of the Week</h2>
+        <div class="insight-quote">
+            "Most producers still treat status sheets like a ritual. If you're not building an automation layer over them by now, you're bleeding hours every week."
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="footer-cta">What resonated with you? Hit reply and let me know.</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
