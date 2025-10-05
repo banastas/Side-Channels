@@ -22,6 +22,7 @@ Topics tend to orbit around:
 
 ## Recent Issues
 
+- **[October 5, 2025](https://substack.banast.as/newsletters/2025-10-05_SideChannels)**
 - **[September 28, 2025](https://substack.banast.as/newsletters/2025-09-28_SideChannels)**
 - **[September 21, 2025](https://substack.banast.as/newsletters/2025-09-21_SideChannels)**
 
