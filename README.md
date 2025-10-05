@@ -1,6 +1,8 @@
 # Side Channels
 
-Weekly dispatch on AI, automation, creative production, and the messy bits in between. The stuff worth paying attention to before it becomes industry consensus.
+Weekly newsletter exploring AI automation, creative production, and hard-earned industry lessons. Curated articles, original photography, and stories from 20+ years in the trenches of VFX and digital production.
+
+The stuff worth paying attention to before it becomes industry consensus.
 
 ## What This Is
 
@@ -10,15 +12,10 @@ Think of it as the tab you keep open all week - the one with links worth sending
 
 ## What You'll Find Here
 
-- **Articles Worth Your Time**: Three pieces per week that either change how you think about something or confirm you weren't crazy for thinking it in the first place
-- **Photo of the Week**: One shot that tells a story better than I could explain it
+- **Articles Worth Your Time**: Three pieces per week on AI, automation, and creative tech that either change how you think about something or confirm you weren't crazy for thinking it
+- **Photo of the Week**: Original photography - one shot that tells a story better than I could explain it
 - **Insight of the Week**: Production wisdom from someone who's been in enough status meetings to know which patterns repeat
-
-Topics tend to orbit around:
-- AI (the practical stuff, not the hype)
-- Automation (especially where it saves you from doing the same thing 40 times)
-- Creative production (lessons from the front lines)
-- Photography (when the light does something interesting)
+- **From the Archive**: Occasional stories from 20+ years in VFX and digital production - the lessons that stuck
 
 ## Recent Issues
 
