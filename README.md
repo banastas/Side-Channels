@@ -20,9 +20,9 @@ Think of it as the tab you keep open all week - the one with links worth sending
 ## Recent Issues
 
 - **[October 12, 2025](https://substack.banast.as/newsletters/2025-10-12_SideChannels)** - Tests, Loyalty, and Learning When to Shut Up
-- **[October 5, 2025](https://substack.banast.as/newsletters/2025-10-05_SideChannels)**
-- **[September 28, 2025](https://substack.banast.as/newsletters/2025-09-28_SideChannels)**
-- **[September 21, 2025](https://substack.banast.as/newsletters/2025-09-21_SideChannels)**
+- **[October 5, 2025](https://substack.banast.as/newsletters/2025-10-05_SideChannels)** - The 3-second choice that saved my career
+- **[September 28, 2025](https://substack.banast.as/newsletters/2025-09-28_SideChannels)** - Happiness, Hype, and Hard Edges of AI
+- **[September 21, 2025](https://substack.banast.as/newsletters/2025-09-21_SideChannels)** - Loops, Limits, and Letdowns
 
 ## Why Subscribe
 
