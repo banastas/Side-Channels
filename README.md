@@ -1,5 +1,9 @@
 # Side Channels
 
+[![Live Newsletter](https://img.shields.io/badge/Subscribe-banastas.substack.com-FF6719?style=for-the-badge&logo=substack)](https://banastas.substack.com)
+[![Built with HTML](https://img.shields.io/badge/Built%20with-HTML%2FCSS-e34c26?style=for-the-badge&logo=html5)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-lightgrey?style=for-the-badge)](https://github.com/banastas/Side-Channels)
+
 Weekly newsletter exploring AI automation, creative production, and hard-earned industry lessons. Curated articles, original photography, and stories from 20+ years in the trenches of VFX and digital production.
 
 The stuff worth paying attention to before it becomes industry consensus.
