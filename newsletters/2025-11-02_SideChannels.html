@@ -117,32 +117,44 @@
             color: #d1d5db;
         }
         
-        .photo-container {
-            text-align: center;
+        .featured-article {
             background: #262626;
-            border-radius: 12px;
+            border-radius: 8px;
             padding: 24px;
-            margin-bottom: 16px;
+            margin-bottom: 48px;
+            border-left: 4px solid #f59e0b;
         }
         
-        .photo-container img {
+        .featured-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .featured-title a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .featured-title a:hover {
+            color: #f59e0b;
+            text-decoration: underline;
+        }
+        
+        .featured-article img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: block;
+            margin-bottom: 16px;
         }
         
-        .photo-link {
-            display: inline-block;
-            margin-top: 12px;
-            font-size: 14px;
-            color: #f59e0b;
-            text-decoration: none;
-            font-weight: 500;
+        .featured-article .article-summary {
+            margin-bottom: 16px;
         }
         
-        .photo-link:hover {
-            text-decoration: underline;
+        .featured-article .article-summary:last-of-type {
+            margin-bottom: 0;
         }
         
         .insight-quote {
@@ -204,7 +216,8 @@
 <body>
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
-        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <p class="newsletter-subtitle">One exhibition legitimized an entire creative scene</p>
+        <p class="newsletter-subtitle">When Duchamp came to Pasadena in 1963, LA artists got permission to rethink everything, plus why AI's productivity gap is about execution, not technology.</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
@@ -214,6 +227,33 @@
     
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="featured-article">
+        <a href="https://blog.banast.as/posts/2025-10-23_when-duchamp-came-to-pasadena/" target="_blank"><img src="https://blog.banast.as/static/2025-10-23_When-Duchamp-Came-to-Pasadena.jpg" alt="When Duchamp Came to Pasadena"></a>
+        <h3 class="featured-title"><a href="https://blog.banast.as/posts/2025-10-23_when-duchamp-came-to-pasadena/" target="_blank">When Duchamp Came to Pasadena</a></h3>
+        <p class="article-source">blog.banast.as</p>
+        <p class="article-summary">
+        I just watched "Duchamp Comes to Pasadena" and couldn't stop thinking about what happens when someone legitimizes an entire creative scene with one bold move.
+        </p>
+        <p class="article-summary">
+        The photo at the top tells you everything about this moment: 20-year-old Eve Babitz playing chess naked with Marcel Duchamp in a museum gallery in 1963. She was dating the curator Walter Hopps, didn't get invited to the opening party because his wife was in town, and decided naked chess with a legendary artist was the perfect revenge. They didn't tell the museum or Duchamp beforehand. He won the game. The photo became folklore.
+        </p>
+        <p class="article-summary">
+        That's what the 1963 Duchamp retrospective felt like to LA artists. Before this, LA's art scene didn't exist. The County Museum had stuffed animals and Egyptian artifacts. Then Hopps brought Duchamp's first American retrospective to Pasadena. Not New York. Not Paris. Pasadena.
+        </p>
+        <p class="article-summary">
+        The artists who saw it had never encountered this work before. No accessible publications. No museum access. Suddenly there's this entire body of conceptual art just sitting there for them to discover. Within two years, the LA County Museum of Art opened, galleries flourished, and the entire LA look (Bengston, Irwin, Ruscha, Larry Bell) traces back to this moment.
+        </p>
+        <p class="article-summary">
+        Here's what matters: <strong>Legitimacy doesn't come from consensus.</strong> Hopps was a chain-smoking curator in his twenties who just made it happen. <strong>Access changes everything.</strong> One exhibition gave artists the conceptual framework they needed. <strong>Small scenes matter.</strong> Everyone knew everyone - that intimacy wasn't a limitation, it was the feature. <strong>Geography matters less than you think.</strong> LA was supposedly a backwater. The work happened anyway.
+        </p>
+        <p class="article-summary">
+        The VFX industry has had these moments. Dennis Muren's team at ILM integrating CG dinosaurs with practical photography on Jurassic Park and suddenly every creature shop had to rethink their approach. Digital Domain's work on Titanic proving digital water and crowds could hold up in hero shots. Weta's facial FACS system for Gollum establishing that performance capture wasn't just mocap cleanup anymore.
+        </p>
+        <p class="article-summary">
+        Every creative community has inflection points. The question is whether you're paying attention when they happen, or whether you're the one making them happen.
+        </p>
+    </div>
 
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
@@ -242,12 +282,14 @@
             <p class="article-summary">Reporter dug for weeks trying to find companies scaling back AI spend after pilots flopped, but nobody would go on record admitting it - classic sunk cost trap where everyone's locked in regardless of what the data actually shows. The silence from companies tells you way more than any press release about AI success stories ever could.</p>
         </div>
     </div>
+
     <div class="section">
         <h2 class="section-title">Insight of the Week</h2>
         <div class="insight-quote">
             "A producer who can't code is fine. A producer who refuses to learn how systems talk to each other is dead weight."
         </div>
     </div>
+
     <div class="footer">
         <p class="footer-text">That's a wrap for this week!</p>
         <p class="signature">Talk soon,<br><br>-b</p>
