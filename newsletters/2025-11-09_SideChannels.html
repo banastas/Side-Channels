@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Side Channels - November 2, 2025</title>
+    <title>Side Channels - November 9, 2025</title>
     <style>
         * {
             margin: 0;
@@ -125,10 +125,19 @@
             border-left: 4px solid #f59e0b;
         }
         
+        .featured-article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 16px;
+        }
+        
         .featured-title {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
+            line-height: 1.4;
         }
         
         .featured-title a {
@@ -141,38 +150,37 @@
             text-decoration: underline;
         }
         
-        .featured-article img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
+        .featured-article p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #d1d5db;
             margin-bottom: 16px;
         }
         
-        .featured-article .article-summary {
-            margin-bottom: 16px;
-        }
-        
-        .featured-article .article-summary:last-of-type {
+        .featured-article p:last-child {
             margin-bottom: 0;
         }
         
-        .insight-quote {
-            background: linear-gradient(135deg, #f59e0b, #f97316);
-            color: #1a1a1a;
-            padding: 24px;
-            border-radius: 12px;
-            text-align: center;
-            font-size: 16px;
-            font-style: italic;
-            line-height: 1.5;
-            font-weight: 500;
+        .featured-article strong {
+            color: #ffffff;
+            font-weight: 600;
+            display: block;
+            margin-top: 4px;
         }
         
-        .divider {
+        .featured-article a {
+            color: #f59e0b;
+            text-decoration: none;
+        }
+        
+        .featured-article a:hover {
+            text-decoration: underline;
+        }
+        
+        .featured-article hr {
             border: none;
             border-top: 1px solid #404040;
-            margin: 32px 0;
+            margin: 24px 0;
         }
         
         .footer {
@@ -207,8 +215,12 @@
                 font-size: 20px;
             }
             
-            .article {
+            .article, .featured-article {
                 padding: 16px;
+            }
+            
+            .featured-title {
+                font-size: 20px;
             }
         }
     </style>
@@ -217,19 +229,23 @@
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
         <p class="newsletter-subtitle">When Narratives Meet Reality</p>
-        <p class="newsletter-subtitle">The OpenAI board drama, now with actual receipts</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
             <span>NOV 9, 2025</span>
         </div>
     </div>
+    
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
     
     <div class="featured-article">
-        <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank"><img src="https://blog.banast.as/static/2025-11-06_Ilya-Sutskevers-OpenAI-Deposition.jpg" alt="The OpenAI Board Drama Receipts Are Here"></a>
-        <h2 class="featured-title"><a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">The OpenAI Board Drama Receipts Are Here</a></h2>
+        <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">
+            <img src="https://blog.banast.as/static/2025-11-06_Ilya-Sutskevers-OpenAI-Deposition.jpg" alt="The OpenAI Board Drama Receipts Are Here">
+        </a>
+        <h2 class="featured-title">
+            <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">The OpenAI Board Drama Receipts Are Here</a>
+        </h2>
 
         <p>A <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.340.1.pdf">365-page deposition transcript</a> dropped this week with real evidence behind last November's OpenAI board chaos. Ilya Sutskever, the chief scientist who voted to fire Sam Altman, sat for nearly 10 hours of questioning in the Musk v. Altman lawsuit.</p>
 
