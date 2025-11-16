@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - November 16, 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 24px;
+            color: #e5e7eb;
+        }
+        
+        .intro {
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #e5e7eb;
+        }
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .article:last-child {
+            margin-bottom: 0;
+        }
+        
+        .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .article-title a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #f59e0b;
+            text-decoration: underline;
+        }
+        
+        .article-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+        
+        .article-summary {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #d1d5db;
+        }
+        
+        
+        
+        .featured-article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 48px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .featured-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .featured-title a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .featured-title a:hover {
+            color: #f59e0b;
+            text-decoration: underline;
+        }
+        
+        .featured-article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 16px;
+        }
+        
+        .featured-article .article-summary {
+            margin-bottom: 16px;
+        }
+        
+        .featured-article .article-summary:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        .photo-container {
+            text-align: center;
+            background: #262626;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        
+        
+        
+        .featured-article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 48px;
+            border-left: 4px solid #f59e0b;
+        }
+        
+        .featured-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .featured-title a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .featured-title a:hover {
+            color: #f59e0b;
+            text-decoration: underline;
+        }
+        
+        .featured-article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 16px;
+        }
+        
+        .featured-article .article-summary {
+            margin-bottom: 16px;
+        }
+        
+        .featured-article .article-summary:last-of-type {
+            margin-bottom: 0;
+        }
+        
+        .photo-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .photo-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #f59e0b;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .photo-link:hover {
+            text-decoration: underline;
+        }
+        
+        .insight-quote {
+            background: linear-gradient(135deg, #f59e0b, #f97316);
+            color: #1a1a1a;
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+        
+        .divider {
+            border: none;
+            border-top: 1px solid #404040;
+            margin: 32px 0;
+        }
+        
+        .footer {
+            text-align: left;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        
+        .footer-text {
+            font-size: 16px;
+            color: #e5e7eb;
+            margin-bottom: 16px;
+        }
+        
+        .signature {
+            font-size: 16px;
+            color: #e5e7eb;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 16px;
+            }
+            
+            .newsletter-title {
+                font-size: 24px;
+            }
+            
+            .section-title {
+                font-size: 20px;
+            }
+            
+            .article {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>&bull;</span>
+            <span>NOV 16, 2025</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/ai-economy-jobs-keith-riegert" target="_blank">Genius Exec Says There Are Only Two Possibilities for AI: It&#039;ll Collapse the Economy, or Make Everyone&#039;s Job Obsolete</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Keith Riegert spelled out the AI trap nobody wants to say out loud - either we automate jobs fast enough to kill demand for the products we're making, or we hit technical limits and the whole thing falls apart anyway. The fact that $550B in spending is betting on one of these two disasters happening tells you what Silicon Valley actually thinks is coming.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/sam-altman-subpoena-onstage" target="_blank">Sam Altman Gets Served Subpoena Live Onstage</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Sam Altman got served a subpoena onstage at an event because an activist group couldn't reach him through normal channels, so they forced it publicly. Shows how inaccessible these guys have become when people have to resort to process servers at conferences just to get their attention.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.technologyreview.com/2025/11/10/1126805/the-state-of-ai-energy-is-king-and-the-us-is-falling-behind/" target="_blank">The State of AI: Energy is king, and the US is falling behind</a>
+            </h3>
+            <p class="article-source">technologyreview.com</p>
+            <p class="article-summary">China added 6x more power capacity than the US last year because they actually see energy as the constraint for AI, while we're keeping coal plants alive at 42% capacity. We're gonna lose this race not because of tech, but because we can't build the infrastructure to run it.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://animationobsessive.substack.com/p/the-toy-story-you-remember" target="_blank">The 'Toy Story' You Remember</a>
+            </h3>
+            <p class="article-source">animationobsessive.substack.com</p>
+            <p class="article-summary">Toy Story had to be rendered digitally then transferred to film stock to actually screen in theaters - nobody remembers that the "digital revolution" still relied on analog distribution because the infrastructure wasn't there yet. Shows how tech adoption is always messier than the clean story we tell afterwards.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/openai-burning-cash-ai-video-slop-sora" target="_blank">OpenAI Is Reportedly Burning a Ludicrous Amount of Cash on Sora</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">OpenAI is burning $15M a day on Sora while losing $12B a quarter, and even their lead engineer admits the economics are "completely unsustainable." At some point the board has to admit they're running a research lab funded by VC money, not an actual business with a path to profitability.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
