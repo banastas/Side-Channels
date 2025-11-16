@@ -240,47 +240,36 @@
     <p class="intro">Here's what caught my attention this week:</p>
     
     <div class="featured-article">
-        <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">
-            <img src="https://blog.banast.as/static/2025-11-06_Ilya-Sutskevers-OpenAI-Deposition.jpg" alt="The OpenAI Board Drama Receipts Are Here">
+        <a href="https://blog.banast.as/2025-11-13_Simplex-Optimization" target="_blank">
+            <img src="https://blog.banast.as/static/2025-11-13_simplex-optimization.jpg" alt="Why the Simplex Method Actually Works">
         </a>
         <h2 class="featured-title">
-            <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">The OpenAI Board Drama Receipts Are Here</a>
+            <a href="https://blog.banast.as/2025-11-13_Simplex-Optimization" target="_blank">Why the Simplex Method Actually Works</a>
         </h2>
-<p class="article-source">blog.banast.as</p>
-        <p>A <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.340.1.pdf">365-page deposition transcript</a> dropped this week with real evidence behind last November's OpenAI board chaos. Ilya Sutskever, the chief scientist who voted to fire Sam Altman, sat for nearly 10 hours of questioning in the Musk v. Altman lawsuit.</p>
-
-        <p>Here's what we learned:</p>
-
-        <p><strong>The Secret 52-Page Memo</strong><br>
-        Sutskever wrote a detailed memo to the independent board directors that opened with: "Sam exhibits a consistent pattern of lying, undermining his execs, and pitting his execs against one another." When asked what action was appropriate, his answer was one word: "Termination." He used disappearing emails to keep it from Sam.</p>
-
-        <p><strong>This Was a Year-Long Plan</strong><br>
-        When asked how long he'd been considering Altman's removal: "At least a year." He was waiting for board member departures to change the dynamics so "the majority of the board is not obviously friendly with Sam."</p>
-
-        <p><strong>All Evidence Came From One Person</strong><br>
-        Almost everything in the memo came from Mira Murati. The Y Combinator allegations? From Mira. The Stripe firing claim about Greg Brockman? From Mira. The GPT-4 Turbo tensions? From Mira. Sutskever never verified any of it with anyone else. Later he admitted: "I've learned the critical importance of firsthand knowledge for matters like this."</p>
-
-        <p><strong>The Anthropic Merger Nobody Talks About</strong><br>
-        During that chaotic weekend after the firing, Helen Toner coordinated a call with Anthropic about merging the two companies - with Anthropic taking over OpenAI's leadership. Dario and Daniela Amodei were on the call. The other board members were "a lot more supportive" than Sutskever, who was "very unhappy about it."</p>
-
-        <p><strong>"Destroying OpenAI Would Be Consistent With The Mission"</strong><br>
-        When OpenAI executives warned that the company would be destroyed without Sam, Helen Toner responded that destroying the company would be consistent with the mission. Sutskever testified she said it "even more directly than that."</p>
-
-        <p><strong>The Board Couldn't Even Show Up</strong><br>
-        Helen Toner and Tasha McCauley weren't attending all board meetings physically. When asked how familiar they seemed with OpenAI's operations, Sutskever's answer: "They seemed to have some familiarity, but it's hard for me to assess." This was the board that fired the CEO of one of the most valuable AI companies in the world.</p>
-
-        <p><strong>They Expected Employees Not to Care</strong><br>
-        Sutskever clarified he hadn't expected employees to cheer when Altman was fired, but he "have not expected them to feel strongly either way." For someone at OpenAI since 2015, that's a remarkable miscalculation.</p>
-
-        <hr>
-
-        <p>The <a href="https://storage.courtlistener.com/recap/gov.uscourts.cand.433688/gov.uscourts.cand.433688.340.1.pdf">full transcript</a> is worth reading if you're into this kind of thing. The process was rushed, the board was inexperienced, the evidence was secondhand, and Anthropic was circling. Either Sutskever saw something real or he convinced himself of a narrative that fell apart under scrutiny.</p>
-
-        <p>Discovery is one hell of a thing.</p>
+        <p class="article-source">blog.banast.as</p>
+        <p>Researchers just cracked why one of the most important problem-solving tools does what it does.</p>
+        
+        <p>The simplex method is an algorithm invented in 1947 that companies, scientists, and governments use every day to solve optimization problems. How to route deliveries, balance budgets, design networks, allocate resources efficiently. In theory, simplex can behave badly and take exponential time to complete. In practice, it's incredibly fast. That disconnect has puzzled mathematicians for decades.</p>
+        
+        <p>Sophie Huiberts and Eleon Bach just tightened the theory. They analyzed simplex under a realistic assumption - that real-world data is never perfectly clean and always has a bit of randomness or noise. With that lens, they showed two things: First, simplex is even more efficient than earlier analyses suggested. Second, within that realistic model, you can't get a better guarantee using this type of method. They found the optimal explanation for its performance.</p>
+        
+        <p>This doesn't make simplex magically faster overnight. It does more - it narrows the gap between what the math predicts and what people observe in practice.</p>
+        
+        <p>George Dantzig invented simplex while working as a mathematical adviser to the newly formed U.S. Air Force. The military needed to solve optimization problems at scale - how to strategically allocate limited resources when dealing with hundreds or thousands of variables. Nearly 80 years later, the simplex method is still among the most widely used tools when a logistical or supply-chain decision needs to be made under complex constraints.</p>
+        
+        <p>The simplex method quietly powers much of modern logistics, economics, and operations research. It's been running fast for almost 80 years, but the theory couldn't explain why. This work doesn't make simplex faster - it strengthens confidence in an algorithm that's already embedded in systems worldwide. The math now matches what practitioners have observed all along.</p>
     </div>
     
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://blog.banast.as/posts/2025-11-06_ilya-sutskevers-openai-deposition/" target="_blank">The OpenAI Board Drama Receipts Are Here</a>
+            </h3>
+            <p class="article-source">blog.banast.as</p>
+            <p class="article-summary">A 365-page deposition transcript dropped this week with real evidence behind last November's OpenAI board chaos. Ilya Sutskever wrote a 52-page memo calling for Sam Altman's termination, waited a year for the right board composition, and based almost everything on secondhand info from Mira Murati. The board couldn't even show up to meetings physically, expected employees not to care about the firing, and Helen Toner coordinated a call about merging with Anthropic during the chaotic weekend. Discovery is one hell of a thing.</p>
+        </div>
 
         <div class="article">
             <h3 class="article-title">
