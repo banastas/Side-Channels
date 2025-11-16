@@ -23,7 +23,7 @@ Think of it as the tab you keep open all week - the one with links worth sending
 
 ## Recent Issues
 
-- **[November 16, 2025](https://substack.banast.as/newsletters/2025-11-16_SideChannels)**
+- **[November 16, 2025](https://substack.banast.as/newsletters/2025-11-16_SideChannels)** - The AI Economy's Two Roads to Nowhere
 - **[November 9, 2025](https://substack.banast.as/newsletters/2025-11-09_SideChannels)** - When Narratives Meet Reality
 - **[November 2, 2025](https://substack.banast.as/newsletters/2025-11-02_SideChannels)** - One exhibition legitimized an entire creative scene
 - **[October 26, 2025](https://substack.banast.as/newsletters/2025-10-26_SideChannels)** - Game engines aren't just for previs anymore
