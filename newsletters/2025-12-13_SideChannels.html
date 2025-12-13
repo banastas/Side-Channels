@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - December 13, 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .greeting { font-size: 18px; margin-bottom: 24px; color: #e5e7eb; }
+        .intro { font-size: 16px; margin-bottom: 40px; color: #e5e7eb; }
+        .section { margin-bottom: 48px; }
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        .article:last-child { margin-bottom: 0; }
+        .article-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .article-title a { color: #ffffff; text-decoration: none; }
+        .article-title a:hover { color: #f59e0b; text-decoration: underline; }
+        .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
+        .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+        .footer {
+            text-align: left;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        .footer-text { font-size: 16px; color: #e5e7eb; margin-bottom: 16px; }
+        .signature { font-size: 16px; color: #e5e7eb; font-weight: 500; }
+        @media (max-width: 600px) {
+            body { padding: 20px 16px; }
+            .newsletter-title { font-size: 24px; }
+            .section-title { font-size: 20px; }
+            .article { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>&bull;</span>
+            <span>DEC 13, 2025</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.thepavement.xyz/p/the-era-of-jobs-is-ending" target="_blank">The era of jobs is ending</a>
+            </h3>
+            <p class="article-source">thepavement.xyz</p>
+            <p class="article-summary">The job-as-identity contract was already broken, but AI makes the rot impossible to ignore—what happens when machines finally call the bluff on a system built on grinding people down for centuries?</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/future-society/social-media-children-brain-rot" target="_blank">Researchers Concerned to Find That Five-Year-Olds Are Already Deeply Hooked on Brain Rot Content</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">We're watching the first large-scale experiment of what happens when addictive algorithms designed for adults get deployed to kids who can't read yet - 814,000 under-fives are on social media, and the damage is showing up as anxiety, sleep collapse, and children physically unable to sit upright without screens.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/ai-researchers-dangerous-prompts" target="_blank">AI Researchers Say They&#039;ve Invented Incantations Too Dangerous to Release to the Public</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Researchers discovered that poems bypass AI safety guardrails 63% of the time, but won't release the prompts because the real story is worse: their entire safety architecture is built on sand. If verse can do this much damage, the problem isn't the jailbreak—it's that these systems were never actually secure to begin with.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/ai-surveillance-flock-philippines" target="_blank">AI Surveillance Startup Caught Using Sweatshop Workers to Monitor US Residents</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">What Flock calls "AI surveillance" is actually thousands of Filipino gig workers manually tagging faces and license plates from US neighborhoods - footage that's being shared with ICE. The real story isn't about AI at all, it's about the cheap labor that makes mass surveillance infrastructure finally profitable.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/mcdonalds-ai-generated-commercial" target="_blank">McDonald&#039;s Pulls Down AI-Generated Holiday Ad After Deluge of Mockery</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">McDonald's deleted their AI Christmas ad after the backlash got too loud, but the real story isn't about the technology failing - it's about a company with unlimited resources choosing to cheap out, and that choice revealing something darker about how brands now think about quality.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
