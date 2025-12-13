@@ -65,6 +65,67 @@
         .article-title a:hover { color: #f59e0b; text-decoration: underline; }
         .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
         .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+        
+        /* Featured Section Styles */
+        .featured {
+            background: linear-gradient(135deg, #262626 0%, #1f1f1f 100%);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 48px;
+            border: 1px solid #f59e0b;
+            position: relative;
+        }
+        .featured-label {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #f59e0b;
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+        .featured-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .featured-title a { color: #ffffff; text-decoration: none; }
+        .featured-title a:hover { color: #f59e0b; }
+        .featured-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+        .featured-body {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+        }
+        .featured-body p {
+            margin-bottom: 16px;
+        }
+        .featured-body p:last-child {
+            margin-bottom: 0;
+        }
+        .featured-cta {
+            display: inline-block;
+            margin-top: 20px;
+            color: #f59e0b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .featured-cta:hover {
+            text-decoration: underline;
+        }
+        
         .footer {
             text-align: left;
             padding-top: 32px;
@@ -78,13 +139,15 @@
             .newsletter-title { font-size: 24px; }
             .section-title { font-size: 20px; }
             .article { padding: 16px; }
+            .featured { padding: 24px 16px; }
+            .featured-title { font-size: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
-        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <p class="newsletter-subtitle">Summoning Ghosts, Not Building Animals</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
@@ -95,44 +158,44 @@
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
 
+    <div class="featured">
+        <span class="featured-label">Featured</span>
+        <h2 class="featured-title">
+            <a href="https://blog.banast.as/posts/2025-12-06_andrej-karpathy/" target="_blank">We're Summoning Ghosts, Not Building Animals</a>
+        </h2>
+        <p class="featured-source">blog.banast.as</p>
+        <div class="featured-body">
+            <p>Andrej Karpathy has this way of reframing things that makes you see the whole field differently. In a recent conversation with Dwarkesh Patel, he laid out his vision for the "decade of agents" - and introduced a metaphor that's been stuck in my head ever since.</p>
+            <p>When most people talk about AI, they reach for animal metaphors. Training models like dogs. Systems that "think" or "reason." But Karpathy flips it: we're not building animals. We're summoning ghosts.</p>
+            <p>This isn't just wordplay. LLMs are simulations of processes that used to happen in human brains. When you prompt GPT-4, you're not talking to an entity - you're summoning a ghost of human text-writing processes captured in training data. If the pattern exists in training, the ghost appears. If it doesn't, you get confabulation.</p>
+            <p>The implications ripple outward. The agent era won't arrive through sudden breakthroughs - it'll come through the unglamorous "march of nines," grinding from 99% to 99.9% reliability the same way self-driving has for a decade. The real innovation will be in-context learning, not bigger training runs. And the bottleneck isn't model capability - it's having good judges to provide reliable training signal.</p>
+            <p>Understanding we're orchestrating ghosts instead of building minds doesn't make AI less impressive. It just helps us avoid the dead ends.</p>
+        </div>
+        <a href="https://blog.banast.as/posts/2025-12-06_andrej-karpathy/" target="_blank" class="featured-cta">Read the full post →</a>
+    </div>
+
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/ai-researchers-dangerous-prompts" target="_blank">AI Researchers Say They've Invented Incantations Too Dangerous to Release to the Public</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Researchers discovered that poems bypass AI safety guardrails 63% of the time, but won't release the prompts because the real story is worse: their entire safety architecture is built on sand. If verse can do this much damage, the problem isn't the jailbreak - it's that these systems were never actually secure to begin with.</p>
+        </div>
 
         <div class="article">
             <h3 class="article-title">
                 <a href="https://www.thepavement.xyz/p/the-era-of-jobs-is-ending" target="_blank">The era of jobs is ending</a>
             </h3>
             <p class="article-source">thepavement.xyz</p>
-            <p class="article-summary">The job-as-identity contract was already broken, but AI makes the rot impossible to ignore—what happens when machines finally call the bluff on a system built on grinding people down for centuries?</p>
+            <p class="article-summary">The job-as-identity contract was already broken, but AI makes the rot impossible to ignore - what happens when machines finally call the bluff on a system built on grinding people down for centuries?</p>
         </div>
 
         <div class="article">
             <h3 class="article-title">
-                <a href="https://futurism.com/future-society/social-media-children-brain-rot" target="_blank">Researchers Concerned to Find That Five-Year-Olds Are Already Deeply Hooked on Brain Rot Content</a>
-            </h3>
-            <p class="article-source">futurism.com</p>
-            <p class="article-summary">We're watching the first large-scale experiment of what happens when addictive algorithms designed for adults get deployed to kids who can't read yet - 814,000 under-fives are on social media, and the damage is showing up as anxiety, sleep collapse, and children physically unable to sit upright without screens.</p>
-        </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://futurism.com/artificial-intelligence/ai-researchers-dangerous-prompts" target="_blank">AI Researchers Say They&#039;ve Invented Incantations Too Dangerous to Release to the Public</a>
-            </h3>
-            <p class="article-source">futurism.com</p>
-            <p class="article-summary">Researchers discovered that poems bypass AI safety guardrails 63% of the time, but won't release the prompts because the real story is worse: their entire safety architecture is built on sand. If verse can do this much damage, the problem isn't the jailbreak—it's that these systems were never actually secure to begin with.</p>
-        </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://futurism.com/artificial-intelligence/ai-surveillance-flock-philippines" target="_blank">AI Surveillance Startup Caught Using Sweatshop Workers to Monitor US Residents</a>
-            </h3>
-            <p class="article-source">futurism.com</p>
-            <p class="article-summary">What Flock calls "AI surveillance" is actually thousands of Filipino gig workers manually tagging faces and license plates from US neighborhoods - footage that's being shared with ICE. The real story isn't about AI at all, it's about the cheap labor that makes mass surveillance infrastructure finally profitable.</p>
-        </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://futurism.com/artificial-intelligence/mcdonalds-ai-generated-commercial" target="_blank">McDonald&#039;s Pulls Down AI-Generated Holiday Ad After Deluge of Mockery</a>
+                <a href="https://futurism.com/artificial-intelligence/mcdonalds-ai-generated-commercial" target="_blank">McDonald's Pulls Down AI-Generated Holiday Ad After Deluge of Mockery</a>
             </h3>
             <p class="article-source">futurism.com</p>
             <p class="article-summary">McDonald's deleted their AI Christmas ad after the backlash got too loud, but the real story isn't about the technology failing - it's about a company with unlimited resources choosing to cheap out, and that choice revealing something darker about how brands now think about quality.</p>
