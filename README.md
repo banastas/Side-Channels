@@ -23,6 +23,7 @@ Think of it as the tab you keep open all week - the one with links worth sending
 
 ## Recent Issues
 
+- **[December 20, 2025](https://substack.banast.as/newsletters/2025-12-20_SideChannels)**
 - **[December 13, 2025](https://substack.banast.as/newsletters/2025-12-13_SideChannels)** - Summoning Ghosts, Not Building Animals
 - **[December 6, 2025](https://substack.banast.as/newsletters/2025-12-06_SideChannels)** - Computing's biggest shift in 40 years
 - **[November 29, 2025](https://substack.banast.as/newsletters/2025-11-29_SideChannels)** - When AI floods the zone, taste becomes the moat
