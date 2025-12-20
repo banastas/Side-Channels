@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - December 20, 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .greeting { font-size: 18px; margin-bottom: 24px; color: #e5e7eb; }
+        .intro { font-size: 16px; margin-bottom: 40px; color: #e5e7eb; }
+        .section { margin-bottom: 48px; }
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        .article:last-child { margin-bottom: 0; }
+        .article-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .article-title a { color: #ffffff; text-decoration: none; }
+        .article-title a:hover { color: #f59e0b; text-decoration: underline; }
+        .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
+        .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+        .footer {
+            text-align: left;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        .footer-text { font-size: 16px; color: #e5e7eb; margin-bottom: 16px; }
+        .signature { font-size: 16px; color: #e5e7eb; font-weight: 500; }
+        @media (max-width: 600px) {
+            body { padding: 20px 16px; }
+            .newsletter-title { font-size: 24px; }
+            .section-title { font-size: 20px; }
+            .article { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>&bull;</span>
+            <span>DEC 20, 2025</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/orbital-ai-data-center-trains-first-model-space" target="_blank">Orbital AI Data Center Trains First Model in Space</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Nvidia just backed an orbital data center that trained its first AI model in space, which means the "$1 trillion/year problem" of powering AI on Earth is officially shifting from thought experiment to engineering challenge. The logistics are still nightmarish, but we're watching the first real bet that space solves what ground-based infrastructure can't.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://sandyuraz.com/blogs/bourdain/" target="_blank">Recovering Anthony Bourdain’s (really) lost Li.st’s</a>
+            </h3>
+            <p class="article-source">sandyuraz.com</p>
+            <p class="article-summary">Someone just recovered Anthony Bourdain's deleted travel archives using nothing but public web crawls and Python, proving that the "permanent internet" isn't just marketing speak. It's a reminder that digital preservation sometimes happens by accident, and what vanishes from the live web often survives in the crawl data most people forget exists.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/anthropic-ai-scientist-doom" target="_blank">Anthropic&#039;s Chief Scientist Says We&#039;re Rapidly Approaching the Moment That Could Doom Us All</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Anthropic's chief scientist just laid out a specific timeline for AI's biggest fork in the road: by 2027-2030, we might have to choose between letting AI systems train themselves (which could unlock AGI that solves major problems) or risk losing control entirely. He's remarkably blunt about the downside: "You don't know where you end up."</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.nextbigfuture.com/2025/12/nate-jones-gets-ai-data-centers-wrong.html" target="_blank">Nate Jones Gets AI Data Centers Wrong</a>
+            </h3>
+            <p class="article-source">nextbigfuture.com</p>
+            <p class="article-summary">While everyone's debating whether space-based chips solve cooling, the real bottleneck nobody's talking about is power - and that's what actually makes orbital AI infrastructure viable at scale. This piece cuts through the hype to explain what Starcloud's H100 launch and Google's radiation testing are really racing toward.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.sciencedaily.com/releases/2025/12/251207031335.htm" target="_blank">Humans are built for nature not modern life</a>
+            </h3>
+            <p class="article-source">sciencedaily.com</p>
+            <p class="article-summary">Your stress response is stuck in overdrive from constant digital alerts, not actual threats - and it's rewiring your body in measurable ways. The uncomfortable part: meditation won't fix it, but redesigning where we live might.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
