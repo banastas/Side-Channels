@@ -79,12 +79,43 @@
             .section-title { font-size: 20px; }
             .article { padding: 16px; }
         }
+        .featured-section { margin-bottom: 48px; }
+        .featured-article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 28px;
+            border-left: 4px solid #f59e0b;
+        }
+        .featured-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .featured-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+            margin-bottom: 16px;
+        }
+        .featured-text:last-child { margin-bottom: 0; }
+        .featured-text a { color: #f59e0b; text-decoration: none; }
+        .featured-text a:hover { text-decoration: underline; }
+        .featured-quote {
+            border-left: 3px solid #6b7280;
+            padding-left: 16px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #d1d5db;
+            font-size: 15px;
+            line-height: 1.7;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
-        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <p class="newsletter-subtitle">Bourdain's Forgotten Lists + AI in Orbit</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
@@ -95,9 +126,45 @@
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
 
+    <div class="section featured-section">
+        <h2 class="section-title">Featured</h2>
+        <div class="featured-article">
+            <h3 class="featured-title">The Ghost of Bourdain's Lists</h3>
+            <p class="featured-text">Someone scraped <a href="https://sandyuraz.com/blogs/bourdain/">li.st</a> before it disappeared, and out tumbled Anthony Bourdain's forgotten lists.</p>
+            
+            <p class="featured-text">Li.st was a 2015-era app—the kind of thing that lived and died in that brief window when tech believed every human activity deserved its own social platform. BJ Novak was involved somehow. The usual suspects used it, then forgot about it, then the servers went quiet.</p>
+            
+            <p class="featured-text">But Bourdain used it. And Bourdain, being Bourdain, didn't make lists of productivity hacks. He made lists about trepanning instruments and the specific qualities of a cheese crust on onion soup gratinée.</p>
+            
+            <p class="featured-text">There's something uncomfortably intimate about reading these now. Not because they're revelatory—anyone who watched Parts Unknown knew the man's obsessions—but because lists are thinking out loud. They're the architecture of a mind before the prose gets polished.</p>
+            
+            <p class="featured-text">His <strong>Objects of Desire</strong> list is pure id:</p>
+            
+            <blockquote class="featured-quote">"19th century trepanning instruments... I don't know what explains my fascination with these devices, designed to drill drain-sized holes into the skull often for purposes of relieving 'pressure' or 'bad humours'. But I can't get enough of them."</blockquote>
+            
+            <p class="featured-text">No posturing. No justification beyond the wanting. The same man who wrote beautifully about the ethics of eating also wanted antique skull-drilling tools and couldn't explain why.</p>
+            
+            <p class="featured-text">His desert island TV picks: <em>The Wire</em>, <em>Tinker, Tailor, Soldier, Spy</em>, <em>Edge of Darkness</em>. No comfort watches. Just slow-burning paranoia and institutional rot. On spy novels: "If the main character carries a gun, I'm already losing interest. Spy novels should be about betrayal."</p>
+            
+            <p class="featured-text">There's a list of "Great Dead Bars of New York" that functions as elegy—Siberia, Billy's Topless, the bar at Hawaii Kai. These places are gone. The whole point was that they were gone, that the city keeps erasing itself and you can only describe the shape of what's missing.</p>
+            
+            <p class="featured-text">Warren Zevon told Letterman to "enjoy every sandwich." Bourdain wrote a list about sandwiches. Pastrami Queen. Eisenberg's tuna salad on white. Street fair sausage and pepper heroes that would have you "shitting like a mink almost immediately."</p>
+            
+            <p class="featured-text">He enjoyed every sandwich. That's the whole sermon.</p>
+            
+            <p class="featured-text" style="margin-top: 20px;"><em>The original li.st scrape lives <a href="https://sandyuraz.com/blogs/bourdain/">here</a>. Go read the whole thing.</em></p>
+        </div>
+    </div>
+
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
-
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.sciencedaily.com/releases/2025/12/251207031335.htm" target="_blank">Humans are built for nature not modern life</a>
+            </h3>
+            <p class="article-source">sciencedaily.com</p>
+            <p class="article-summary">Your stress response is stuck in overdrive from constant digital alerts, not actual threats - and it's rewiring your body in measurable ways. The uncomfortable part: meditation won't fix it, but redesigning where we live might.</p>
+        </div>
         <div class="article">
             <h3 class="article-title">
                 <a href="https://futurism.com/artificial-intelligence/orbital-ai-data-center-trains-first-model-space" target="_blank">Orbital AI Data Center Trains First Model in Space</a>
@@ -105,37 +172,12 @@
             <p class="article-source">futurism.com</p>
             <p class="article-summary">Nvidia just backed an orbital data center that trained its first AI model in space, which means the "$1 trillion/year problem" of powering AI on Earth is officially shifting from thought experiment to engineering challenge. The logistics are still nightmarish, but we're watching the first real bet that space solves what ground-based infrastructure can't.</p>
         </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://sandyuraz.com/blogs/bourdain/" target="_blank">Recovering Anthony Bourdain’s (really) lost Li.st’s</a>
-            </h3>
-            <p class="article-source">sandyuraz.com</p>
-            <p class="article-summary">Someone just recovered Anthony Bourdain's deleted travel archives using nothing but public web crawls and Python, proving that the "permanent internet" isn't just marketing speak. It's a reminder that digital preservation sometimes happens by accident, and what vanishes from the live web often survives in the crawl data most people forget exists.</p>
-        </div>
-
         <div class="article">
             <h3 class="article-title">
                 <a href="https://futurism.com/artificial-intelligence/anthropic-ai-scientist-doom" target="_blank">Anthropic&#039;s Chief Scientist Says We&#039;re Rapidly Approaching the Moment That Could Doom Us All</a>
             </h3>
             <p class="article-source">futurism.com</p>
             <p class="article-summary">Anthropic's chief scientist just laid out a specific timeline for AI's biggest fork in the road: by 2027-2030, we might have to choose between letting AI systems train themselves (which could unlock AGI that solves major problems) or risk losing control entirely. He's remarkably blunt about the downside: "You don't know where you end up."</p>
-        </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://www.nextbigfuture.com/2025/12/nate-jones-gets-ai-data-centers-wrong.html" target="_blank">Nate Jones Gets AI Data Centers Wrong</a>
-            </h3>
-            <p class="article-source">nextbigfuture.com</p>
-            <p class="article-summary">While everyone's debating whether space-based chips solve cooling, the real bottleneck nobody's talking about is power - and that's what actually makes orbital AI infrastructure viable at scale. This piece cuts through the hype to explain what Starcloud's H100 launch and Google's radiation testing are really racing toward.</p>
-        </div>
-
-        <div class="article">
-            <h3 class="article-title">
-                <a href="https://www.sciencedaily.com/releases/2025/12/251207031335.htm" target="_blank">Humans are built for nature not modern life</a>
-            </h3>
-            <p class="article-source">sciencedaily.com</p>
-            <p class="article-summary">Your stress response is stuck in overdrive from constant digital alerts, not actual threats - and it's rewiring your body in measurable ways. The uncomfortable part: meditation won't fix it, but redesigning where we live might.</p>
         </div>
     </div>
     <div class="footer">
