@@ -79,28 +79,56 @@
             .section-title { font-size: 20px; }
             .article { padding: 16px; }
         }
-        .featured-section { margin-bottom: 48px; }
-        .featured-article {
-            background: #262626;
-            border-radius: 8px;
-            padding: 28px;
-            border-left: 4px solid #f59e0b;
+        /* Featured Section Styles */
+        .featured {
+            background: linear-gradient(135deg, #262626 0%, #1f1f1f 100%);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 48px;
+            border: 1px solid #f59e0b;
+            position: relative;
+        }
+        .featured-label {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #f59e0b;
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 4px;
         }
         .featured-title {
             font-size: 22px;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 20px;
+            margin-bottom: 8px;
+            margin-top: 8px;
         }
-        .featured-text {
+        .featured-title a { color: #ffffff; text-decoration: none; }
+        .featured-title a:hover { color: #f59e0b; }
+        .featured-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+        .featured-body {
             font-size: 16px;
             line-height: 1.7;
             color: #e5e7eb;
+        }
+        .featured-body p {
             margin-bottom: 16px;
         }
-        .featured-text:last-child { margin-bottom: 0; }
-        .featured-text a { color: #f59e0b; text-decoration: none; }
-        .featured-text a:hover { text-decoration: underline; }
+        .featured-body p:last-child {
+            margin-bottom: 0;
+        }
+        .featured-body a { color: #f59e0b; text-decoration: none; }
+        .featured-body a:hover { text-decoration: underline; }
         .featured-quote {
             border-left: 3px solid #6b7280;
             padding-left: 16px;
@@ -109,6 +137,21 @@
             color: #d1d5db;
             font-size: 15px;
             line-height: 1.7;
+        }
+        .featured-cta {
+            display: inline-block;
+            margin-top: 20px;
+            color: #f59e0b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .featured-cta:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .featured { padding: 24px 16px; }
+            .featured-title { font-size: 20px; }
         }
     </style>
 </head>
@@ -126,34 +169,34 @@
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
 
-    <div class="section featured-section">
-        <h2 class="section-title">Featured</h2>
-        <div class="featured-article">
-            <h3 class="featured-title">The Ghost of Bourdain's Lists</h3>
-            <p class="featured-text">Someone scraped <a href="https://sandyuraz.com/blogs/bourdain/">li.st</a> before it disappeared, and out tumbled Anthony Bourdain's forgotten lists.</p>
+    <div class="featured">
+        <span class="featured-label">Featured</span>
+        <h2 class="featured-title">The Ghost of Bourdain's Lists</h2>
+        <p class="featured-source">sandyuraz.com</p>
+        <div class="featured-body">
+            <p>Someone scraped <a href="https://sandyuraz.com/blogs/bourdain/">li.st</a> before it disappeared, and out tumbled Anthony Bourdain's forgotten lists.</p>
             
-            <p class="featured-text">Li.st was a 2015-era app—the kind of thing that lived and died in that brief window when tech believed every human activity deserved its own social platform. BJ Novak was involved somehow. The usual suspects used it, then forgot about it, then the servers went quiet.</p>
+            <p>Li.st was a 2015-era app—the kind of thing that lived and died in that brief window when tech believed every human activity deserved its own social platform. BJ Novak was involved somehow. The usual suspects used it, then forgot about it, then the servers went quiet.</p>
             
-            <p class="featured-text">But Bourdain used it. And Bourdain, being Bourdain, didn't make lists of productivity hacks. He made lists about trepanning instruments and the specific qualities of a cheese crust on onion soup gratinée.</p>
+            <p>But Bourdain used it. And Bourdain, being Bourdain, didn't make lists of productivity hacks. He made lists about trepanning instruments and the specific qualities of a cheese crust on onion soup gratinée.</p>
             
-            <p class="featured-text">There's something uncomfortably intimate about reading these now. Not because they're revelatory—anyone who watched Parts Unknown knew the man's obsessions—but because lists are thinking out loud. They're the architecture of a mind before the prose gets polished.</p>
+            <p>There's something uncomfortably intimate about reading these now. Not because they're revelatory—anyone who watched Parts Unknown knew the man's obsessions—but because lists are thinking out loud. They're the architecture of a mind before the prose gets polished.</p>
             
-            <p class="featured-text">His <strong>Objects of Desire</strong> list is pure id:</p>
+            <p>His <strong>Objects of Desire</strong> list is pure id:</p>
             
             <blockquote class="featured-quote">"19th century trepanning instruments... I don't know what explains my fascination with these devices, designed to drill drain-sized holes into the skull often for purposes of relieving 'pressure' or 'bad humours'. But I can't get enough of them."</blockquote>
             
-            <p class="featured-text">No posturing. No justification beyond the wanting. The same man who wrote beautifully about the ethics of eating also wanted antique skull-drilling tools and couldn't explain why.</p>
+            <p>No posturing. No justification beyond the wanting. The same man who wrote beautifully about the ethics of eating also wanted antique skull-drilling tools and couldn't explain why.</p>
             
-            <p class="featured-text">His desert island TV picks: <em>The Wire</em>, <em>Tinker, Tailor, Soldier, Spy</em>, <em>Edge of Darkness</em>. No comfort watches. Just slow-burning paranoia and institutional rot. On spy novels: "If the main character carries a gun, I'm already losing interest. Spy novels should be about betrayal."</p>
+            <p>His desert island TV picks: <em>The Wire</em>, <em>Tinker, Tailor, Soldier, Spy</em>, <em>Edge of Darkness</em>. No comfort watches. Just slow-burning paranoia and institutional rot. On spy novels: "If the main character carries a gun, I'm already losing interest. Spy novels should be about betrayal."</p>
             
-            <p class="featured-text">There's a list of "Great Dead Bars of New York" that functions as elegy—Siberia, Billy's Topless, the bar at Hawaii Kai. These places are gone. The whole point was that they were gone, that the city keeps erasing itself and you can only describe the shape of what's missing.</p>
+            <p>There's a list of "Great Dead Bars of New York" that functions as elegy—Siberia, Billy's Topless, the bar at Hawaii Kai. These places are gone. The whole point was that they were gone, that the city keeps erasing itself and you can only describe the shape of what's missing.</p>
             
-            <p class="featured-text">Warren Zevon told Letterman to "enjoy every sandwich." Bourdain wrote a list about sandwiches. Pastrami Queen. Eisenberg's tuna salad on white. Street fair sausage and pepper heroes that would have you "shitting like a mink almost immediately."</p>
+            <p>Warren Zevon told Letterman to "enjoy every sandwich." Bourdain wrote a list about sandwiches. Pastrami Queen. Eisenberg's tuna salad on white. Street fair sausage and pepper heroes that would have you "shitting like a mink almost immediately."</p>
             
-            <p class="featured-text">He enjoyed every sandwich. That's the whole sermon.</p>
-            
-            <p class="featured-text" style="margin-top: 20px;"><em>The original li.st scrape lives <a href="https://sandyuraz.com/blogs/bourdain/">here</a>. Go read the whole thing.</em></p>
+            <p>He enjoyed every sandwich. That's the whole sermon.</p>
         </div>
+        <a href="https://sandyuraz.com/blogs/bourdain/" target="_blank" class="featured-cta">Read the original li.st scrape →</a>
     </div>
 
     <div class="section">
