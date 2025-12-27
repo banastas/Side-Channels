@@ -79,12 +79,86 @@
             .section-title { font-size: 20px; }
             .article { padding: 16px; }
         }
+        /* Featured Section Styles */
+        .featured {
+            background: linear-gradient(135deg, #262626 0%, #1f1f1f 100%);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 48px;
+            border: 1px solid #f59e0b;
+            position: relative;
+        }
+        .featured-label {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #f59e0b;
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+        .featured-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .featured-title a { color: #ffffff; text-decoration: none; }
+        .featured-title a:hover { color: #f59e0b; }
+        .featured-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+        .featured-body {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+        }
+        .featured-body p {
+            margin-bottom: 16px;
+        }
+        .featured-body p:last-child {
+            margin-bottom: 0;
+        }
+        .featured-body a { color: #f59e0b; text-decoration: none; }
+        .featured-body a:hover { text-decoration: underline; }
+        .featured-quote {
+            border-left: 3px solid #6b7280;
+            padding-left: 16px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #d1d5db;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .featured-cta {
+            display: inline-block;
+            margin-top: 20px;
+            color: #f59e0b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .featured-cta:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .featured { padding: 24px 16px; }
+            .featured-title { font-size: 20px; }
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
-        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <p class="newsletter-subtitle">James Cameron Sold The Terminator for $1</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
@@ -94,6 +168,34 @@
     
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="featured">
+        <span class="featured-label">Featured</span>
+        <h2 class="featured-title">Hollywood's Death Spiral (According to the Guy Who Made Avatar)</h2>
+        <p class="featured-source">blog.banast.as</p>
+        <div class="featured-body">
+            <p>In 1977, a truck driver in Orange County walked out of Star Wars and knew his life had changed. He wasn't sure how. He just knew he couldn't keep driving trucks.</p>
+            
+            <p>That driver was James Cameron. And in a recent interview, he laid out the cold economics of an industry that may no longer work.</p>
+            
+            <blockquote class="featured-quote">"The theatrical marketplace has collapsed about 35%. It hasn't rebounded. The cost of making movies is continuously going up and the demand is falling. That's a little bit of a death spiral right there."</blockquote>
+            
+            <p>This isn't doom and gloom from some industry outsider. This is the guy who made the two highest-grossing films of all time, admitting that even Avatar isn't a guaranteed success anymore. <em>Fire and Ash</em> has to work financially. That's not a given.</p>
+            
+            <p>Which makes his origin story even sharper.</p>
+            
+            <p>Cameron wrote The Terminator as an unknown with zero credits. Studios wanted the script. Nobody wanted him to direct. So he sold the rights to producer Gale Anne Hurd for one dollar. In exchange, one promise: she would never make the movie without him as director.</p>
+            
+            <p>The studios tried everything to split them up. Both refused. Every time.</p>
+            
+            <blockquote class="featured-quote">"You don't deserve anything. It's just a question of what you can negotiate for yourself and what you can prove to the world you're capable of. Then the money will flow from that."</blockquote>
+            
+            <p>His advice to anyone feeling the creative pull: "When you can't not draw. When you can't not write. When you start thinking filmically about everything around you... you've got to tell somebody the damn story. You don't have a choice. Just accept it."</p>
+            
+            <p>The industry might be in a death spiral. But someone, somewhere, is still going to walk out of a theater with their life changed. And maybe that's enough.</p>
+        </div>
+        <a href="https://blog.banast.as/posts/2025-12-27_james-cameron/" target="_blank" class="featured-cta">Read the full post &rarr;</a>
+    </div>
 
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
