@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - December 27, 2025</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .greeting { font-size: 18px; margin-bottom: 24px; color: #e5e7eb; }
+        .intro { font-size: 16px; margin-bottom: 40px; color: #e5e7eb; }
+        .section { margin-bottom: 48px; }
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        .article:last-child { margin-bottom: 0; }
+        .article-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .article-title a { color: #ffffff; text-decoration: none; }
+        .article-title a:hover { color: #f59e0b; text-decoration: underline; }
+        .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
+        .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+        .footer {
+            text-align: left;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        .footer-text { font-size: 16px; color: #e5e7eb; margin-bottom: 16px; }
+        .signature { font-size: 16px; color: #e5e7eb; font-weight: 500; }
+        @media (max-width: 600px) {
+            body { padding: 20px 16px; }
+            .newsletter-title { font-size: 24px; }
+            .section-title { font-size: 20px; }
+            .article { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>&bull;</span>
+            <span>DEC 27, 2025</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/professor-ai-wealthy-inevitable" target="_blank">Professor Warns That the Wealthy Are Trying to Use AI to Seize Control of Everything</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">Tressie McMillan Cottom flips the AI debate from "will it save or destroy us" to the sharper question: who gets to decide, and why are the wealthy betting you'll accept their version of the future as inevitable?</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html" target="_blank">Nvidia buying AI chip startup Groq for about $20 billion, biggest deal</a>
+            </h3>
+            <p class="article-source">cnbc.com</p>
+            <p class="article-summary">Nvidia just spent $20B to acquire the company that built Google's TPU, signaling that chip competition is getting real enough to buy out preemptively rather than compete against it.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://odyssey.ml/the-dawn-of-a-world-simulator" target="_blank">The dawn of a world simulator</a>
+            </h3>
+            <p class="article-source">odyssey.ml</p>
+            <p class="article-summary">AI models trained on video are starting to learn physics and causality instead of just pattern-matching text, and Odyssey-2 demonstrates what happens when you let them actually figure out how the world works. The shift from "better language models" to "world simulators" changes what these systems can do fundamentally.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
