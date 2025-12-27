@@ -23,6 +23,7 @@ Think of it as the tab you keep open all week - the one with links worth sending
 
 ## Recent Issues
 
+- **[December 27, 2025](https://substack.banast.as/newsletters/2025-12-27_SideChannels)**
 - **[December 20, 2025](https://substack.banast.as/newsletters/2025-12-20_SideChannels)** - Bourdain's Forgotten Lists + AI in Orbit
 - **[December 13, 2025](https://substack.banast.as/newsletters/2025-12-13_SideChannels)** - Summoning Ghosts, Not Building Animals
 - **[December 6, 2025](https://substack.banast.as/newsletters/2025-12-06_SideChannels)** - Computing's biggest shift in 40 years
