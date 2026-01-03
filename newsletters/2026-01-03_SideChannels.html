@@ -65,6 +65,78 @@
         .article-title a:hover { color: #f59e0b; text-decoration: underline; }
         .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
         .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+
+        /* Featured Section Styles */
+        .featured {
+            background: linear-gradient(135deg, #262626 0%, #1f1f1f 100%);
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 48px;
+            border: 1px solid #f59e0b;
+            position: relative;
+        }
+        .featured-label {
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #f59e0b;
+            color: #1a1a1a;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+        .featured-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+        .featured-title a { color: #ffffff; text-decoration: none; }
+        .featured-title a:hover { color: #f59e0b; }
+        .featured-source {
+            font-size: 14px;
+            color: #9ca3af;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+        .featured-body {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+        }
+        .featured-body p {
+            margin-bottom: 16px;
+        }
+        .featured-body p:last-child {
+            margin-bottom: 0;
+        }
+        .featured-body a { color: #f59e0b; text-decoration: none; }
+        .featured-body a:hover { text-decoration: underline; }
+        .featured-quote {
+            border-left: 3px solid #6b7280;
+            padding-left: 16px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #d1d5db;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .featured-cta {
+            display: inline-block;
+            margin-top: 20px;
+            color: #f59e0b;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .featured-cta:hover {
+            text-decoration: underline;
+        }
+
         .footer {
             text-align: left;
             padding-top: 32px;
@@ -78,13 +150,15 @@
             .newsletter-title { font-size: 24px; }
             .section-title { font-size: 20px; }
             .article { padding: 16px; }
+            .featured { padding: 24px 16px; }
+            .featured-title { font-size: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1 class="newsletter-title">Side Channels</h1>
-        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <p class="newsletter-subtitle">Two Lines of Code Changed Everything</p>
         <div class="author-info">
             <span>BILL ANASTAS</span>
             <span>&bull;</span>
@@ -94,6 +168,34 @@
     
     <p class="greeting">Hey there,</p>
     <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="featured">
+        <span class="featured-label">Featured</span>
+        <h2 class="featured-title">
+            <a href="https://blog.banast.as/posts/2025-12-31_two-lines-of-code/" target="_blank">The Two Lines of Code That Simulate the Solar System</a>
+        </h2>
+        <p class="featured-source">blog.banast.as</p>
+        <div class="featured-body">
+            <p>I watched a <a href="https://www.youtube.com/watch?v=nCg3aXn5F3M">video about orbital mechanics</a> that broke my brain in the best way possible.</p>
+            
+            <p>The setup is simple enough: you want to simulate an asteroid orbiting the sun, you know Newton's laws, you write the obvious code. Update position based on velocity, update velocity based on acceleration, run it. The orbit spirals outward, your asteroid escapes into the void, and your simulation breaks. This isn't a bug in your math—it's a fundamental problem with how you're stepping through time.</p>
+            
+            <p>For decades, this meant simulating orbital dynamics over millions of years was essentially impossible. Not because computers were too slow, but because the algorithms themselves became unstable long before reaching those timescales.</p>
+            
+            <p>Then in 1991, astrophysicists borrowed an idea from molecular dynamics. The fix was to swap two lines of code.</p>
+            
+            <p>Same calculations, different order—update velocity first using current acceleration, then update position using the <em>new</em> velocity instead of the old one. The simulation that was fundamentally broken is now fundamentally stable. Billions of orbits with error staying below 10^-10, practically machine precision.</p>
+            
+            <p>The answer lives in phase space. When particles move according to Newton's laws, they preserve certain geometric properties—specifically area. The naive algorithm violates this at each step, and those tiny violations accumulate until your simulation bears no resemblance to reality. The swapped algorithm preserves area exactly. You can run it forever and the fundamental geometry stays intact.</p>
+            
+            <p>The payoff was immediate: scientists could finally watch the Kirkwood gaps form in their simulations—those empty regions in the asteroid belt that astronomers had noticed for 150 years but couldn't model because the algorithms broke down long before the gaps would emerge.</p>
+            
+            <blockquote class="featured-quote">The best numerical methods aren't brute-force approximations—they're the ones that preserve what the physics says should be preserved, with the geometry of motion baked into the algorithm.</blockquote>
+            
+            <p>Two lines swapped. That's the difference between chaos and a solar system.</p>
+        </div>
+        <a href="https://blog.banast.as/posts/2025-12-31_two-lines-of-code/" target="_blank" class="featured-cta">Read the full post &rarr;</a>
+    </div>
 
     <div class="section">
         <h2 class="section-title">Articles Worth Your Time</h2>
@@ -108,7 +210,7 @@
 
         <div class="article">
             <h3 class="article-title">
-                <a href="https://www.theregister.com/2025/12/31/groq_nvidia_analysis/" target="_blank">Why did Nvidia really drop $20B on Groq? • The Register</a>
+                <a href="https://www.theregister.com/2025/12/31/groq_nvidia_analysis/" target="_blank">Why did Nvidia really drop $20B on Groq?</a>
             </h3>
             <p class="article-source">theregister.com</p>
             <p class="article-summary">Nvidia's $20B "licensing deal" with Groq looks less like a partnership and more like a stealth acquisition designed to sidestep antitrust reviews—and the real target is Groq's SRAM technology that runs 10-80x faster than standard GPU memory.</p>
