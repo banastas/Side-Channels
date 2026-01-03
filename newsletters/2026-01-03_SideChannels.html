@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Channels - January 3, 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background-color: #1a1a1a;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 32px;
+        }
+        .newsletter-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .newsletter-subtitle {
+            font-size: 16px;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .author-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        .greeting { font-size: 18px; margin-bottom: 24px; color: #e5e7eb; }
+        .intro { font-size: 16px; margin-bottom: 40px; color: #e5e7eb; }
+        .section { margin-bottom: 48px; }
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f59e0b;
+        }
+        .article {
+            background: #262626;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-left: 4px solid #f59e0b;
+        }
+        .article:last-child { margin-bottom: 0; }
+        .article-title { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .article-title a { color: #ffffff; text-decoration: none; }
+        .article-title a:hover { color: #f59e0b; text-decoration: underline; }
+        .article-source { font-size: 14px; color: #9ca3af; font-style: italic; margin-bottom: 12px; }
+        .article-summary { font-size: 15px; line-height: 1.6; color: #d1d5db; }
+        .footer {
+            text-align: left;
+            padding-top: 32px;
+            border-top: 1px solid #333333;
+            margin-top: 48px;
+        }
+        .footer-text { font-size: 16px; color: #e5e7eb; margin-bottom: 16px; }
+        .signature { font-size: 16px; color: #e5e7eb; font-weight: 500; }
+        @media (max-width: 600px) {
+            body { padding: 20px 16px; }
+            .newsletter-title { font-size: 24px; }
+            .section-title { font-size: 20px; }
+            .article { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="newsletter-title">Side Channels</h1>
+        <p class="newsletter-subtitle">This Week's Dispatch</p>
+        <div class="author-info">
+            <span>BILL ANASTAS</span>
+            <span>&bull;</span>
+            <span>JAN 3, 2026</span>
+        </div>
+    </div>
+    
+    <p class="greeting">Hey there,</p>
+    <p class="intro">Here's what caught my attention this week:</p>
+
+    <div class="section">
+        <h2 class="section-title">Articles Worth Your Time</h2>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://blog.google/products/gemini/nano-banana-google-trends-2025/" target="_blank">13 of our favorite Nano Banana trends from 2025</a>
+            </h3>
+            <p class="article-source">blog.google</p>
+            <p class="article-summary">Everyone was obsessed with Nano Banana in 2025, but Google's real story is about what happened behind the memes: AI image editing quietly became the default creative tool, not a specialist feature.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://www.theregister.com/2025/12/31/groq_nvidia_analysis/" target="_blank">Why did Nvidia really drop $20B on Groq? • The Register</a>
+            </h3>
+            <p class="article-source">theregister.com</p>
+            <p class="article-summary">Nvidia's $20B "licensing deal" with Groq looks less like a partnership and more like a stealth acquisition designed to sidestep antitrust reviews—and the real target is Groq's SRAM technology that runs 10-80x faster than standard GPU memory.</p>
+        </div>
+
+        <div class="article">
+            <h3 class="article-title">
+                <a href="https://futurism.com/artificial-intelligence/ai-police-report-frog" target="_blank">Cops Forced to Explain Why AI Generated Police Report Claimed Officer Transformed Into Frog</a>
+            </h3>
+            <p class="article-source">futurism.com</p>
+            <p class="article-summary">A police department's AI system hallucinated an officer transforming into a frog because it was processing dialogue from a movie playing in the background, exposing the real cost of deploying language models to generate official documents without basic content filtering.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">That's a wrap for this week!</p>
+        <p class="signature">Talk soon,<br><br>-b</p>
+    </div>
+</body>
+</html>
