@@ -178,19 +178,19 @@
         <div class="featured-body">
             <p>I watched a <a href="https://www.youtube.com/watch?v=nCg3aXn5F3M">video about orbital mechanics</a> that broke my brain in the best way possible.</p>
             
-            <p>The setup is simple enough: you want to simulate an asteroid orbiting the sun, you know Newton's laws, you write the obvious code. Update position based on velocity, update velocity based on acceleration, run it. The orbit spirals outward, your asteroid escapes into the void, and your simulation breaks. This isn't a bug in your math—it's a fundamental problem with how you're stepping through time.</p>
+            <p>The setup is simple enough: you want to simulate an asteroid orbiting the sun, you know Newton's laws, you write the obvious code. Update position based on velocity, update velocity based on acceleration, run it. The orbit spirals outward, your asteroid escapes into the void, and your simulation breaks. This isn't a bug in your math - it's a fundamental problem with how you're stepping through time.</p>
             
             <p>For decades, this meant simulating orbital dynamics over millions of years was essentially impossible. Not because computers were too slow, but because the algorithms themselves became unstable long before reaching those timescales.</p>
             
             <p>Then in 1991, astrophysicists borrowed an idea from molecular dynamics. The fix was to swap two lines of code.</p>
             
-            <p>Same calculations, different order—update velocity first using current acceleration, then update position using the <em>new</em> velocity instead of the old one. The simulation that was fundamentally broken is now fundamentally stable. Billions of orbits with error staying below 10^-10, practically machine precision.</p>
+            <p>Same calculations, different order - update velocity first using current acceleration, then update position using the <em>new</em> velocity instead of the old one. The simulation that was fundamentally broken is now fundamentally stable. Billions of orbits with error staying below 10^-10, practically machine precision.</p>
             
-            <p>The answer lives in phase space. When particles move according to Newton's laws, they preserve certain geometric properties—specifically area. The naive algorithm violates this at each step, and those tiny violations accumulate until your simulation bears no resemblance to reality. The swapped algorithm preserves area exactly. You can run it forever and the fundamental geometry stays intact.</p>
+            <p>The answer lives in phase space. When particles move according to Newton's laws, they preserve certain geometric properties - specifically area. The naive algorithm violates this at each step, and those tiny violations accumulate until your simulation bears no resemblance to reality. The swapped algorithm preserves area exactly. You can run it forever and the fundamental geometry stays intact.</p>
             
-            <p>The payoff was immediate: scientists could finally watch the Kirkwood gaps form in their simulations—those empty regions in the asteroid belt that astronomers had noticed for 150 years but couldn't model because the algorithms broke down long before the gaps would emerge.</p>
+            <p>The payoff was immediate: scientists could finally watch the Kirkwood gaps form in their simulations - those empty regions in the asteroid belt that astronomers had noticed for 150 years but couldn't model because the algorithms broke down long before the gaps would emerge.</p>
             
-            <blockquote class="featured-quote">The best numerical methods aren't brute-force approximations—they're the ones that preserve what the physics says should be preserved, with the geometry of motion baked into the algorithm.</blockquote>
+            <blockquote class="featured-quote">The best numerical methods aren't brute-force approximations - they're the ones that preserve what the physics says should be preserved, with the geometry of motion baked into the algorithm.</blockquote>
             
             <p>Two lines swapped. That's the difference between chaos and a solar system.</p>
         </div>
@@ -213,7 +213,7 @@
                 <a href="https://www.theregister.com/2025/12/31/groq_nvidia_analysis/" target="_blank">Why did Nvidia really drop $20B on Groq?</a>
             </h3>
             <p class="article-source">theregister.com</p>
-            <p class="article-summary">Nvidia's $20B "licensing deal" with Groq looks less like a partnership and more like a stealth acquisition designed to sidestep antitrust reviews—and the real target is Groq's SRAM technology that runs 10-80x faster than standard GPU memory.</p>
+            <p class="article-summary">Nvidia's $20B "licensing deal" with Groq looks less like a partnership and more like a stealth acquisition designed to sidestep antitrust reviews - and the real target is Groq's SRAM technology that runs 10-80x faster than standard GPU memory.</p>
         </div>
 
         <div class="article">
